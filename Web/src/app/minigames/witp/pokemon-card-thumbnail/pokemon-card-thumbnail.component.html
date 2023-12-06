@@ -1,0 +1,11 @@
+
+<div class="container">
+    <div class="background">
+        <img *ngIf="!isLoading" [src]="imageUrl" alt="Pokemon thumbnail"/>
+        <div class="loader" *ngIf="isLoading"></div>
+        <h5>{{name | uppercase}}</h5>
+        <app-progress-bar
+            [current]="discoveryProcentage"
+        ></app-progress-bar>
+    </div>
+</div>

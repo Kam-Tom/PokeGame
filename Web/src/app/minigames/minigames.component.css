@@ -1,0 +1,86 @@
+#witp, #vs
+{
+    width: 30%;
+    min-width: 400px;
+    min-height: 350px;
+    height: 50%;
+    border: 1px solid black;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border: 5px solid #D5A100;
+    padding:1rem;
+}
+#vs
+{
+    background-color:  #E54222;
+}
+#witp
+{
+    background-color:#37796C;
+}
+.inline
+{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 100%;
+}
+h4
+{
+    text-align: center;
+    font-size: 1.5rem;
+    color:#FFCC00;
+    text-shadow: rgb(10, 40, 95) 3px 0px 0px, rgb(10, 40, 95) 2.83487px 0.981584px 0px, rgb(10, 40, 95) 2.35766px 1.85511px 0px, rgb(10, 40, 95) 1.62091px 2.52441px 0px, rgb(10, 40, 95) 0.705713px 2.91581px 0px, rgb(10, 40, 95) -0.287171px 2.98622px 0px, rgb(10, 40, 95) -1.24844px 2.72789px 0px, rgb(10, 40, 95) -2.07227px 2.16926px 0px, rgb(10, 40, 95) -2.66798px 1.37182px 0px, rgb(10, 40, 95) -2.96998px 0.42336px 0px, rgb(10, 40, 95) -2.94502px -0.571704px 0px, rgb(10, 40, 95) -2.59586px -1.50383px 0px, rgb(10, 40, 95) -1.96093px -2.27041px 0px, rgb(10, 40, 95) -1.11013px -2.78704px 0px, rgb(10, 40, 95) -0.137119px -2.99686px 0px, rgb(10, 40, 95) 0.850987px -2.87677px 0px, rgb(10, 40, 95) 1.74541px -2.43999px 0px, rgb(10, 40, 95) 2.44769px -1.73459px 0px, rgb(10, 40, 95) 2.88051px -0.838247px 0px;
+}
+#container
+{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height: 70%;
+    
+}
+button
+{
+    margin-top:3%;
+    width: 35%;
+    cursor: pointer;
+    border: 3px solid #D5A100;
+    background-color:#f3bf23;
+}
+
+.button-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+app-progress-bar
+{
+    width: 15rem;
+}
+.popout-container
+{
+    background-color:#09131885;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popout
+{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(131, 84, 84);
+    border:2px solid #D5A100;
+}

@@ -1,0 +1,41 @@
+<div id="gallery">
+    <button id="filter-button" 
+        (click)="onChangeFilter()">
+        <img [src]="showDiscovered === 'yes' ? 'assets/134C.png' : 'assets/134B.png'"
+            [ngClass]="{hidden: showDiscovered==='both'}"/>
+    </button>
+    <button id="sort-button" 
+        (click)="onChangeSort()">
+        <i [ngClass]="{'down': sortMethod == 'desc','up': sortMethod == 'asc', 'hidden': sortMethod=='noSort'}" class="arrow"></i>
+    </button>
+    <p  style="text-align: center;">{{ page }} / {{MAX_POKEMONS}}</p>
+    <div class="row" *ngIf="loaded">
+
+        <div *ngFor="let pokemon of pokemons | pokemonSort:page-(cardsCount*2):page-cardsCount:sortMethod:showDiscovered">
+            <app-pokemon-card-thumbnail 
+            [secretId]="pokemon.SecretId"
+            [name]="pokemon.Name"
+            [discoveryProcentage]="pokemon.DiscoveryProcentage"
+            (click)="onPokemonClick(pokemon.SecretId)"
+            [appHover] = "80"
+            ></app-pokemon-card-thumbnail>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="loaded">
+        <div *ngFor="let pokemon of pokemons | pokemonSort:page-cardsCount:page:sortMethod:showDiscovered">
+            <app-pokemon-card-thumbnail 
+            [secretId]="pokemon.SecretId"
+            [name]="pokemon.Name"
+            [discoveryProcentage]="pokemon.DiscoveryProcentage"
+            [appHover] = "80"
+            (click)="onPokemonClick(pokemon.SecretId)"
+            ></app-pokemon-card-thumbnail>
+        </div>
+    </div>
+</div>
+<div class="button-container">
+    <button (click)="onNextPage(-1)">Right</button>
+    <button (click)="onBack()">Back</button>
+    <button (click)="onNextPage(1)">Left</button>
+</div>

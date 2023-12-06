@@ -1,0 +1,20 @@
+<div class="background">
+    <div class="container" style="height: 5%;">
+        <h4>Strike: {{streak}}</h4>
+    </div>
+    <div class="container">
+        <app-pokemon-vscard [secretId]="firstId" (click)="onChoose(firstId)"></app-pokemon-vscard>
+        <app-pokemon-vscard [secretId]="secondId" (click)="onChoose(secondId)"></app-pokemon-vscard>
+    </div>
+    <div class="container" style="height: 10%;">
+        <button (click)="onBack()">Back</button>
+    </div>
+</div>
+<div class="popout-container" [ngStyle]="{display: !popout ? 'none' : 'flex'}">
+    <div class="popout">
+        <p>{{Winner}}</p>
+        <p style="color:green">{{WinnerStats}}</p>
+        <p style="color:red">{{LoserStats}}</p>
+        <button (click)="onPopoutClick()">{{PopoutButtonText}}</button>
+    </div>
+</div>

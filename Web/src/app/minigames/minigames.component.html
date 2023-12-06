@@ -1,0 +1,36 @@
+<div id="container">
+    <div id="witp">
+        <h4>WITP</h4>
+        <div class="inline">Ids <app-progress-bar [current]="getData(0)"></app-progress-bar></div>
+        <div class="inline">Names <app-progress-bar [current]="getData(1)"></app-progress-bar></div>
+        <div class="inline">Generations <app-progress-bar [current]="getData(2)"></app-progress-bar></div>
+        <div class="button-container">
+            <button (click)="onStart('WITP')">Start</button>
+        </div>
+    </div>
+    <div id="vs">
+        <h4>VS</h4>
+        <br/>
+        <div class="inline" style="justify-content: center;">Score: {{ getVSScore() }}</div>
+        <br/>
+        <br/>
+        <div class="button-container">
+            <button (click)="onStart('VS')">Start</button>
+        </div>
+    </div>
+</div>
+<div class="button-container">
+    <button (click)="onBack()">Back</button>
+</div>
+<div class="button-container">
+    <button (click)="popout=true">Remove Account</button>
+</div>
+<div class="popout-container" [ngStyle]="{display: !popout ? 'none' : 'flex'}">
+    <div class="popout">
+        <p>Are you sure you want to delete your account?</p>
+        <div class="button-container">
+            <button (click)="onDeleteAccount()">Yes</button>
+            <button (click)="popout=false">No</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="background">
+        <img [src]="imageUrl" alt="Pokemon Image"/>
+        <form [formGroup]="pokemonForm" (ngSubmit)="onSubmit()">
+            <app-progress-bar [current]="discoveryProgress"></app-progress-bar>
+            <div class="small-container">
+                <label for="id">Id</label>
+                <input              
+                    type="number"
+                    id="id"
+                    formControlName="id">
+                <label for="name">Name</label>
+                <input            
+                    type="text"
+                    id="name"
+                    formControlName="name">
+                <label for="generation">Generation</label>
+                <input            
+                    type="number"
+                    id="generation"
+                    formControlName="generation">
+            </div>
+
+            <div class="small-container">
+                <button type="submit" >Submit</button>
+                <button type="button" (click)="onBack()">Back</button>
+            </div>
+
+        </form>
+        
+    </div>
+</div>

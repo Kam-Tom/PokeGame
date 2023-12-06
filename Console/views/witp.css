@@ -1,0 +1,47 @@
+WITPScreen
+{
+    background:#04724D;
+    align:center middle;
+}
+
+Horizontal
+{
+    height: auto;
+    width: 100%;
+    align:center middle;
+}
+
+ImageViewer
+{
+    border: wide #F4E869;
+    background:cornsilk;
+}
+PokemonCard ProgressBar
+{
+    margin: 1 0;
+    dock:bottom;
+}
+PokemonCard
+{
+    margin: 0 5;
+    width: 30;
+    height: 20;
+    background: #CD5334;
+    border: wide #F4E869;
+}
+PokemonCard Label
+{
+    width: 30;
+    text-align: center;
+}
+#page_nr
+{
+    width: 100%;
+    text-align: center;
+    color: #F4E869;
+}
+
+PokemonCard:focus
+{
+    background:red;
+}

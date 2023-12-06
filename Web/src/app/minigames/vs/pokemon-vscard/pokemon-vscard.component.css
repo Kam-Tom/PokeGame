@@ -1,0 +1,28 @@
+.background
+{
+    background-color: rgb(131, 84, 84);
+    min-height: 250px;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img
+{
+    width: 90%;
+    aspect-ratio: 1;
+    background-color: #EFFCD5;
+    border:2px solid #D5A100;
+}
+.container
+{
+    min-width: 200px;
+    width: 45vw;
+    margin:2vw;
+    aspect-ratio: 1;
+    border:5px solid #D5A100;
+
+}

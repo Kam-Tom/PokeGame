@@ -1,0 +1,66 @@
+GameModeScreen
+{
+    background: #3085C3;
+    width: 100%;
+    height: 100%;
+    align: center middle;
+}
+GameModeScreen Horizontal
+{
+    width: auto;
+    height: auto;
+}
+GameModeScreen #back_button
+{
+    margin: 10 0 0 0;
+}
+VSMinigameWrapper
+{
+    padding: 1 1;
+    margin: 0 10;
+    width: 50;
+    height: 17;
+    border: wide #F4E869;
+    background:#04724D;
+    color: #F4E869;
+}
+WITPMinigameWrapper
+{
+    padding: 1 1;
+    margin: 0 10;
+    width: 50;
+    height: 17;
+    border: wide #F4E869;
+    background:#CD5334;
+
+    color: #F4E869;
+}
+VSMinigameWrapper Horizontal
+{
+    width: 100%;
+    height: auto;
+    align: center middle;
+}
+WITPMinigameWrapper Horizontal
+{
+    width: 100%;
+    height: auto;
+}
+VSMinigameWrapper Button
+{
+    margin:4 0 0 0;
+}
+WITPMinigameWrapper Button
+{
+    margin:1 0 0 0;
+}
+GameModeScreen #max_score
+{
+    text-align:center ;
+    align:center middle;
+}
+ProgressBar
+{
+    width: 30;
+    dock: right;
+}

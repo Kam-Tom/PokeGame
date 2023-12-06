@@ -1,0 +1,38 @@
+
+.container
+{
+    border:5px solid #D5A100;
+    padding: 0.3rem;
+    margin: 1rem;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(131, 84, 84);
+    cursor: pointer;
+}
+.background
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+img
+{
+    width: 100%;
+    border:2px solid #D5A100;
+    background-color: #EFFCD5;
+
+}
+app-progress-bar
+{
+    width: 100%;
+}
+.loader
+{
+    width: 9rem;
+    height: 9rem;
+    
+}

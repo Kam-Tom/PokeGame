@@ -1,0 +1,13 @@
+.container
+{
+    background: rgb(233, 224, 224);
+    height: 1.1rem;
+    border-radius: 50px;
+    overflow-x: hidden;
+}
+.progress
+{
+    background: #FFCC00;
+    height: 1.1rem;
+    border-radius: 50px;
+}

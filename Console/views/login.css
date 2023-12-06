@@ -1,0 +1,39 @@
+LoginScreen
+{
+    background: #3085C3;
+    align: center top;
+    width: 100%;
+    height: 100%;
+}
+LoginScreen Label
+{
+    color: #F4E869;
+}
+Wrapper Label
+{
+    margin: 0 0;
+}
+Wrapper
+{
+    padding: 0 0;
+    width:69;
+    height: 70%;
+    align: center top;
+}
+Input
+{
+    margin: 2 2;
+}
+Horizontal
+{
+    width: 100%;
+    height: 3;
+}
+Button
+{
+    margin: 0 5;
+}
+.hidden
+{
+    display: none;
+}

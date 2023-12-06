@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>PokeGame</h1>
+
+    <form [formGroup]="signupForm" (ngSubmit)="onLogin()">
+        <h2>Login</h2> <div class="loader" *ngIf="isLoading"></div>
+        <div class="errors" *ngIf="signupForm.touched">
+            <p 
+                *ngIf="signupForm.get('username').hasError('required') ||
+                       signupForm.get('username').hasError('minlength') || 
+                       signupForm.get('username').hasError('maxlength')">
+                *Username length must be between 3 and 24 characters
+            </p>
+            <p *ngIf="signupForm.get('username').hasError('regex')">
+                *Usernames cannot contain special characters
+            </p>
+            <p *ngIf="signupForm.get('password').hasError('regex')">
+                *Password must contain at least 1 special character
+            </p>
+            <p 
+                *ngIf="signupForm.get('password').hasError('minlength') || 
+                    signupForm.get('password').hasError('maxlength')">
+                *Password length must be between 8 and 36 characters
+            </p>
+            <p *ngIf="error">
+                
+            </p>
+        </div>
+        <p class="errors" *ngIf="error">
+            {{error}}
+        </p>
+        <label for="username">User Name</label>
+        <input              
+            type="text"
+            id="username"
+            formControlName="username">
+
+    
+        <label for="password">Password</label>
+        <input            
+            type="password"
+            id="password"
+            formControlName="password">
+
+
+        <button type="submit">Login</button>
+        <button type="button" (click)="onRegister()">Register</button>
+    </form>
+    
+</div>

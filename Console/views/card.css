@@ -1,0 +1,54 @@
+CardScreen
+{
+    width: 100%;
+    height: 100%;
+    align:center middle;
+}
+Card ImageViewer
+{
+    height: 100%;
+    width: 50%;
+    margin:0;
+
+}
+Card
+{
+    width: 90%;
+    height: 90%;
+    align:center middle;
+    background: #CD5334;
+    border: wide #F4E869;
+
+}
+Card #back_button
+{
+    margin: 6 3 0 0;
+}
+Card #submit_button
+{
+    margin: 6 0 0 3;
+}
+Card ProgressBar
+{
+    margin: 2 0;
+    dock:top;
+    align:center top;
+}
+Card Select
+{
+    width: 30%;
+}
+.valid
+{
+    margin: 1 3;
+    height: 3;
+    border: wide greenyellow;
+    padding: 1 0;
+}
+.in-valid
+{
+    margin: 1 3;
+    height: 3;
+    border: wide red;
+    padding: 1 0;
+}
